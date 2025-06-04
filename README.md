@@ -1,2 +1,11 @@
 # Data-Structures-Algorithms
-Java-based projects demonstrating various data structures
+This repository contains Java-based implementations of key data structures and algorithms. 
+
+🔧 Key Topics Covered:
+    - Linked Lists
+    - Stacks & Queues 
+    - Binary Search Trees 
+    - Hashing 
+    - Sorting Algorithms 
+    - Graph Algorithms
+    - Recursion
