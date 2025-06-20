@@ -1,11 +1,7 @@
-package lxn240002;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Iterator;
 import java.util.Scanner;
-//import lxn240002.Timer;
-//import lxn240002.BTreePrinter;
 
 public class BinarySearchTree <T extends Comparable<? super T>> implements Iterable<T> {
 
