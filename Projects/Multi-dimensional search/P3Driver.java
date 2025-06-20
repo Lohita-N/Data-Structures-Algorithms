@@ -1,6 +1,3 @@
-// Change to your net id
-package lxn240002;
-
 import java.io.File;
 import java.util.List;
 import java.util.LinkedList;
