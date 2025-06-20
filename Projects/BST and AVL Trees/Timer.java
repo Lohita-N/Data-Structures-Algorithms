@@ -1,5 +1,3 @@
-package lxn240002;
-
 public class Timer {
     long startTime, endTime, elapsedTime, memAvailable, memUsed;
     boolean ready;// Indicate whether the timer has been stopped
