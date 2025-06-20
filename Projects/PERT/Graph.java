@@ -1,17 +1,10 @@
-// change package name to your netid
-package lxn240002;
-
 import java.util.*;
 
 public class Graph implements Iterable<Graph.Vertex> {
     AdjList[] adjList;
-    int n; // number of vertices in the graph
-    int m; // number of edges in the graph
-    final boolean directed;  // true if graph is directed, false otherwise
-
-    /**
-     * Nested class to represent a vertex of a graph
-     */
+    int n; 
+    int m; 
+    final boolean directed;  
 
     public class Vertex {
         public List<Edge> adj;
@@ -20,59 +13,36 @@ public class Graph implements Iterable<Graph.Vertex> {
         public Vertex() {
             adj = new ArrayList<>();  // Initialize to an empty list
         }
-        /**
-         * Constructor for vertex
-         *
-         * @param n
-         *            : int - name of the vertex
-         */
+       
         public Vertex(int n) {
             name = n;
             adj = new ArrayList<>();
         }
 
-        /**
-         * Constructor for vertex, to be used in applications that need to extend vertex
-         * @param u	: Vertex - the vertex to be cloned
-         */
         public Vertex(Vertex u) {
             name = u.name;
         }
 
-        /** Number of outgoing edges from the vertex.
-         */
         public int outDegree() {
             return adj(this).outEdges.size();
         }
 
-        /** Number of incoming edges from the vertex.
-         */
         public int inDegree() {
             return adj(this).inEdges.size();
         }
 
-        /**
-         * Method to get name of a vertex.
-         *
-         */
         public int getName() {
             return name;
         }
 
-        /* Index i stores vertex with name i+1 */
         public int getIndex() {
             return name - 1;
         }
 
-        /**
-         * hashCode of a vertex can be its name, since name is unique
-         */
         public int hashCode() {
             return name;
         }
 
-        /** name of vertex is unique, so use that to implement equals
-         */
         @Override
         public boolean equals(Object other) {
             Vertex otherVertex = (Vertex) other;
@@ -82,31 +52,17 @@ public class Graph implements Iterable<Graph.Vertex> {
             return this.name == otherVertex.name;
         }
 
-
-        /**
-         * Method to get vertex name
-         */
         public String toString() {
             return Integer.toString(name);
         }
     }
-
-    /**
-     * Nested class that represents an edge of a Graph
-     */
 
     public class Edge implements Comparable<Edge> {
         Vertex from; // head vertex
         Vertex to;   // tail vertex
         int weight;  // weight of edge
         int name;    // name of edge
-        /**
-         * Constructor for Edge
-         * @param u   : Vertex - Vertex from which edge starts
-         * @param v   : Vertex - Vertex on which edge lands
-         * @param w   : int - weight of edge
-         * @param n   : int - name of edge
-         */
+        
         public Edge(Vertex u, Vertex v, int w, int n) {
             from = u;
             to = v;
