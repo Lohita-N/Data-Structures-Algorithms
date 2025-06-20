@@ -1,5 +1,4 @@
 import java.util.Comparator;
-import lxn240002.BinarySearchTree;
 
 public class AVLTree<T extends Comparable<? super T>> extends BinarySearchTree<T> {
 
