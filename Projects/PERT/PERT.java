@@ -1,10 +1,3 @@
-package lxn240002;
-
-import lxn240002.Graph.Vertex;
-import lxn240002.Graph.Edge;
-import lxn240002.Graph.GraphAlgorithm;
-import lxn240002.Graph.Factory;
-
 import java.io.File;
 import java.util.LinkedList;
 import java.util.Scanner;
