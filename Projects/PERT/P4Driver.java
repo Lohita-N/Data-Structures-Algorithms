@@ -1,9 +1,3 @@
-/* Driver code for PERT algorithm (Project 4)
- * @author rbk
- */
-// Change to your netid
-package lxn240002;
-
 import java.util.Scanner;
 
 // prints output only if size < 20 or details is true
