@@ -1,5 +1,3 @@
-package lxn240002;
-
 import java.util.Comparator;
 import lxn240002.BinarySearchTree;
 
