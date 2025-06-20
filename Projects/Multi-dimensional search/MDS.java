@@ -1,11 +1,7 @@
-package lxn240002;
-
 import java.util.*;
 
 public class MDS {
-    // Maps item ID to Item object
     private Map<Integer, Item> idMap = new HashMap<>();
-    // Maps description number to a sorted set of items by price
     private Map<Integer, TreeSet<Item>> descMap = new HashMap<>();
 
     // Represents an item
