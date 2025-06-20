@@ -1,8 +1,4 @@
 //Starter code for Project 1
-
-// Change dsa to your NetId
-package lxn240002;
-
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Scanner;
